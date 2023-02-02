@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.all-browsers{
+    background-color: rgb(169, 166, 166);
+    padding: 10px;
+}
+.all-browsers > h1{
+    margin: 8px;
+    padding: 10px;
+}
+.browser>h2,p{
+    margin: 5px;
+    padding: 6px;
+}
+.browser{
+    background-color: aliceblue;
+    padding: 6px;
+    margin: 10px;
+}

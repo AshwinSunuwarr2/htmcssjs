@@ -1,0 +1,189 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS template</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            background-color: rgb(83, 83, 83);
+            padding: 45px;
+            font-size: 25px;
+            color: rgb(253, 254, 255);
+        }
+        nav{
+            float: left;
+            padding: 10px;
+            width: 30%;
+            height: 500px;
+            background: rgb(158, 158, 158);
+        }
+        nav ul{
+            list-style-type: none;
+            padding: auto;
+        }
+        article{
+            float: right;
+            width: 70%;
+            height: 500px;
+            background: rgb(249, 247, 247);
+            padding: 20px;
+        }
+        section::after {
+            content: "";
+            display: none;
+            clear:both;
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(83, 83, 83);
+            padding: 10px;
+            font-size: 25px;
+            color: aliceblue;
+
+        }
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Lalitpur</a></li>
+                <li><a href="#">Kathmandu</a></li>
+                <li><a href="#">Bhaktapur></a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Lalitpur</h1>
+            <p>Lalitpur is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
+            </p><br>
+            
+            <picture>
+                <source srcset="bulb_on.png" media="(max-width: 600px)">
+                <source srcset="bulb_off.png" media="(max-width: 1500px)">
+                <source srcset="skull.png"> 
+                <img src="bulb_off.png" alt="Default image" style="width: auto; height: 100px;">
+            </picture>
+            **********  font-size will be more responsive if written in 'vw' (viewport window) format 
+                eg:style="font-size:10vw" ************
+
+
+        </article>
+    </section>
+
+    <footer><p>Footer</p></footer>
+</body>
+</html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            font-size: 4vw;
+            background-color: rgb(64, 149, 149);
+            padding: 5px;
+            color: aliceblue;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        .leftClass{
+            float: left;    
+            width: 20%;
+            text-align: center;
+            height: 60vh;
+        }
+        .leftClass a{
+            padding: 5px;
+            background-color: rgb(152, 199, 199);
+            margin-top: 8px;
+            display: block;
+            color: black;
+            width: 100%;
+            
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            height: 60vh;
+        }
+        .rightClass{
+            float: left;
+            width: 20%;
+            margin-top: 7px;
+            background-color: rgb(205, 240, 240);
+            text-align: center;
+            padding: 80;
+            height: 60vh;
+        }
+
+        @media (max-width: 620px){
+            .leftClass, .main, .rightClass{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Hell o Earth</h2>
+    </header>
+
+    <div style="overflow:auto">
+        <nav class="leftClass">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+
+        <article class="main">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </article>
+         
+        <div class="rightClass">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+    </div>
+   
+
+    <div style="background-color:#b4d5d5;text-align:center;padding:10px;margin-top:7px;">© copyright www.Cpoyright.com</div>
+ 
+</body>
+</html>

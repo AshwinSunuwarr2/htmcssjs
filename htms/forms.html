@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--
+    <form action="/index.html">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname" value="Ashwin"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname" value="Sunuwar">
+        <input type="submit" value="SUbmit">
+    </form>
+-->
+<!--********* drop-down list --- & --- data-list ************-->
+<!--
+<form action="#">
+    <label for="cars">Choose a car: </label>
+    <select name="cars" id="cars" size="3" multiple>
+        <option value="Volvo">Volvo</option>
+        <option value="Audi">Audi</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Tucson">Tucson</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Ferrari">Ferrari</option>
+    </select>
+    <input type="submit">
+</form>
+
+<form action="#">
+    <label for="cars">Car lists: </label>
+    <input list="browsers" name="car">
+    <datalist id="browsers">
+        <option value="mercedes">
+        <option value="volvo">    
+    </datalist>
+</form>
+-->
+
+<!--*********** text-area ***********-->
+    <h2>text area :</h2><br>
+    <form action="#">
+    <!--    
+        <textarea name="message" id="message" cols="30" rows="10">
+            Write here..
+        </textarea>
+    -->
+    <textarea name="message" id="message" style="width: 410px; height: 200px;">
+        here here..
+    </textarea>
+        <br><br>
+        <button type="submit" onclick="alert('Selection submitted.')">Submit</button>
+    </form>
+    <br><br>
+
+<h2>The <mark>fieldset</mark> and <mark>legend</mark> Elements</h2>
+<form action="#">
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="fname">First Name: </label><br>
+        <input type="text" name="fname" id="fname" value="Mike"><br>
+        <label for="lname">Last Name: </label><br>
+        <input type="text" name="lname" id="lname" value="Scott"><br>
+        <br>
+        <input type="submit">
+    </fieldset><br><br>
+    <label for="color">Fav COlor: </label>
+    <input type="color" name="color" id="color" value="#fff000">
+<!--
+    <fieldset>
+    <legend>Professional Info</legend>
+        <label for="codename">Code Name: </label><br>
+        <input type="text" name="codename" id="codename" value="Mike"><br>
+        <label for="id">Id No: </label><br>
+        <input type="number" name="id" id="id" value=23031><br>
+        <br>
+        <input type="submit">
+    </fieldset><br><br>
+-->
+</form>
+
+<form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="10">
+    100  +
+    <input type="number" id="b" name="b" value="100">
+    =
+    <output name="x" for="a b"></output><br>
+    <input type="submit">
+</form>
+</body>
+</html>

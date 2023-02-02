@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+             <!--border-collapse: collapse;-->
+    <link rel="icon" type="image/x-ixon" sizes="180x180" href="images/favicon.ico">
+</head>
+<body  style="background-color: powderblue; position: inherit;">
+    <h1 style="text-align: center;">Home webpage</h1>
+    <p><a href="https://www.facebook.com/" target="_top"><img src="skull.png" width="85px" height="80px"></a></p>
+    <br>
+    <button onclick="document.location='https://www.facebook.com/'" style="margin: auto; text-align: center;">Facebook</button>
+
+
+<table style="width: 95%;">
+    <caption>HTML practice</caption>
+    <colgroup>
+        <col span="2" style="background-color: rgb(234, 197, 197)">
+    </colgroup>
+        <tr>
+            <th>First Name</th>          <!--colspan="2"-->   
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ashwin</td>
+            <td>Sunuwar</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Winston</td>
+            <td>Churchil</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Wick</td>
+            <td>52</td>
+        </tr>
+    </table>
+   <!-- <h2>Unordered list</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Soda</li>
+    </ul>
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Soda</li>
+    </ol>
+    <h2>Description list</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>-Coffee is necessary item for many people.</dd>
+        <dt>Tea</dt>
+        <dd>-Tea is mixture of various natural ingredients.</dd>
+        <dt>Soda</dt>
+        <dd>-Soda is just soda.</dd>
+    </dl>          -->
+<!--********************    <atrical> tag usage        ***********-->
+    <div>
+        <article class="artClass">
+            <h1>Header of the Article.</h1>
+            <article class="art">
+                <h2>Title1</h2>
+                <p>
+                    This part covers the article part for first title.
+                </p>
+            </article>
+            <article class="art">
+                <h2>Title2</h2>
+                <p>
+                    This part covers the article part for second title.
+                </p>
+            </article>
+            <article class="art">
+                <h2>Title3</h2>
+                <p>
+                    This part covers the article part for third title.
+                </p>
+            </article>
+        </article>
+    </div>
+<!--************ id similar to class but can be used only once **********-->
+<h2 id="thisID">Some background black is good.</h2>
+
+<!--**** Javascript example getElementById *******-->
+<div class="javasClass">
+    <button onclick="myFunction()" type="button">Textt Change</button>
+    <h3>JavaScript can change the content of html</h3>
+    <button type="button" onclick="nextFunction()">change style</button>
+    <p id="javas">This is content before</p>
+    <script>
+        function myFunction(){
+            document.getElementById("javas").innerHTML = "Changed by JS...."
+        }
+        function nextFunction(){
+            document.getElementById("javas").style.fontSize = "30px";
+            document.getElementById("javas").style.color = "red";
+        }
+    </script>
+</div>
+
+<img id="myImage" src="bulb_off.png" style="width: 200px; height: 180px;"><br>
+
+<p>
+    <button type="button" onclick="light(1)">ON</button>
+    <button type="button" onclick="light(0)">OFF</button>
+</p>
+<br>
+<!--
+    <table width="100%" style="border-collapse: collapse;">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+    </tr>
+    <tr>
+        
+        <td>
+            <div style="margin: 5px; padding: 45px; background-color: aliceblue;">
+                <p>A <sup>quick</sup> <mark>brown</mark> fox jump <del>over</del> the <sub>lazy</sub> <ins>dog.</ins></p>
+                </div>
+        </td>
+        
+        <td>
+            <div style="margin: 5px; padding: 45px; background-color: aliceblue;">
+                <p>A <sup>quick</sup> <mark>brown</mark> fox jump <del>over</del> the <sub>lazy</sub> <ins>dog.</ins></p>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="margin: 5px; padding: 45px; background-color: aliceblue;">
+                <p>A <sup>quick</sup> <mark>brown</mark> fox jump <del>over</del> the <sub>lazy</sub> <ins>dog.</ins></p>
+                </div>
+        </td>
+        <td>
+            <div style="margin: 5px; padding: 45px; background-color: aliceblue;">
+                <p>A <sup>quick</sup> <mark>brown</mark> fox jump <del>over</del> the <sub>lazy</sub> <ins>dog.</ins></p>
+                </div>
+        </td>
+    </tr>
+</table>
+-->
+ <details>
+    <summary>Headin for Summary</summary>
+    <p>This is hidden details ............</p>
+ </details>
+
+ 
+</body>
+</html>
